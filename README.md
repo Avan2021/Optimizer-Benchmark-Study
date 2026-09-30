@@ -5,6 +5,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Google Colab](https://img.shields.io/badge/Google%20Colab-Notebook-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1LI0Gt4Ilwb6MYS0VFUSPFP4REUQ65iFC?usp=sharing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > A controlled, reproducible benchmark comparing **SGD**, **SGD + Momentum**, and **Adam** on an identical CNN architecture and seed — grounded in Kingma & Ba's *Adam: A Method for Stochastic Optimization* (ICLR 2015).
