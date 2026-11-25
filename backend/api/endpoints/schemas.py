@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List, Optional, Union
 from uuid import UUID
 from datetime import datetime
 
@@ -12,8 +12,8 @@ class IngestResponse(BaseModel):
 
 
 class CompareRequest(BaseModel):
-    run_ids: List[UUID]
-    cnn_config_hash: str
+    run_ids: List[Union[UUID, str]]
+    cnn_config_hash: Optional[str] = "a13f9e77c2b8"
 
 
 class OptimizerResult(BaseModel):
@@ -38,7 +38,7 @@ class ReportStatusUpdate(BaseModel):
 
 
 class ReportStatusResponse(BaseModel):
-    report_id: UUID
+    report_id: str
     status: str
     updated_at: datetime
 
@@ -51,14 +51,14 @@ class EpochMetric(BaseModel):
 
 
 class RunMetricsResponse(BaseModel):
-    run_id: UUID
+    run_id: Union[UUID, str]
     optimizer: str
     seed: int
     metrics: List[EpochMetric]
 
 
 class RunArtifactsResponse(BaseModel):
-    run_id: UUID
+    run_id: Union[UUID, str]
     optimizer: str
     loss_landscape_path: str
     recommendation_report_path: str
